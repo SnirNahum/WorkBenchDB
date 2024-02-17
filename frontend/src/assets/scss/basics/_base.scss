@@ -1,0 +1,90 @@
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+#root {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  font-weight: normal;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+
+  * {
+    pointer-events: none;
+  }
+}
+
+input {
+  font-family: inherit;
+  text-align: inherit;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: 0px;
+  scrollbar-color: #dfd5e2 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 0px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #4545454a;
+  border-radius: 8px;
+  border: 1px solid #ffffff;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}

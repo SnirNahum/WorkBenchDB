@@ -1,0 +1,13 @@
+.products-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.product-card{
+    border: 1px solid red;
+    max-width: 200px;
+    
+}
+.product-img{
+    width: 200px;
+}

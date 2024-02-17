@@ -1,0 +1,13 @@
+@media screen and (max-width: 768px) {
+  #root {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    justify-items: center;
+    margin: 0;
+  }
+
+  main {
+    margin: 0;
+    padding: 0;
+  }
+}

@@ -1,0 +1,19 @@
+{
+    "products": [
+        {
+            "title": "incididunt elit.",
+            "img": "https://www.homecenter.co.il/cdn/shop/files/3038708856.jpg?v=1701090287",
+            "desc": "magna elit labore ipsum incididunt elit tempor Lorem consectetur labore sit sit Lorem tempor sed."
+        },
+        {
+            "title": "incididunt elit.",
+            "img": "https://www.homecenter.co.il/cdn/shop/files/3038708856.jpg?v=1701090287",
+            "desc": "magna elit labore ipsum incididunt elit tempor Lorem consectetur labore sit sit Lorem tempor sed."
+        },
+        {
+            "title": "incididunt elit.",
+            "img": "https://www.homecenter.co.il/cdn/shop/files/3038708856.jpg?v=1701090287",
+            "desc": "magna elit labore ipsum incididunt elit tempor Lorem consectetur labore sit sit Lorem tempor sed."
+        }
+    ]
+}
