@@ -4,6 +4,7 @@ import { utilService } from "./utilService";
 
 const PRODUCT_KEY = "productDB";
 export const workBenchDBService = {
+  
   setWorkBenchDBPrompt,
   getEmptyProduct,
 
@@ -25,6 +26,13 @@ function _createProducts() {
       _createProduct(utilService.getRandomLoremIpsum(2), utilService.getRandomInt(20, 100), utilService.getRandomLoremIpsum(15)),
       _createProduct(utilService.getRandomLoremIpsum(2), utilService.getRandomInt(20, 100), utilService.getRandomLoremIpsum(15)),
       _createProduct(utilService.getRandomLoremIpsum(2), utilService.getRandomInt(20, 100), utilService.getRandomLoremIpsum(15)),
+      _createProduct(utilService.getRandomLoremIpsum(2), utilService.getRandomInt(20, 100), utilService.getRandomLoremIpsum(15)),
+      _createProduct(utilService.getRandomLoremIpsum(2), utilService.getRandomInt(20, 100), utilService.getRandomLoremIpsum(15)),
+      _createProduct(utilService.getRandomLoremIpsum(2), utilService.getRandomInt(20, 100), utilService.getRandomLoremIpsum(15)),
+      _createProduct(utilService.getRandomLoremIpsum(2), utilService.getRandomInt(20, 100), utilService.getRandomLoremIpsum(15)),
+      _createProduct(utilService.getRandomLoremIpsum(2), utilService.getRandomInt(20, 100), utilService.getRandomLoremIpsum(15)),
+      _createProduct(utilService.getRandomLoremIpsum(2), utilService.getRandomInt(20, 100), utilService.getRandomLoremIpsum(15)),
+      _createProduct(utilService.getRandomLoremIpsum(2), utilService.getRandomInt(20, 100), utilService.getRandomLoremIpsum(15)),
     ];
     storageService.store(PRODUCT_KEY, products);
   }
@@ -36,7 +44,7 @@ function _createProduct(title, price, desc) {
     _id: utilService.makeId(),
     title,
     price,
-    img: "https://www.homecenter.co.il/cdn/shop/files/3038708856.jpg?v=1701090287",
+    img: "https://d2d22nphq0yz8t.cloudfront.net/6cbcadef-96e0-49e9-b3bd-9921afe362db/https://www.payngo.co.il/media/catalog/product/8/8/887-263-413-999-p3-5ah.png",
     desc,
     createdAt: Date.now(),
   };

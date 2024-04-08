@@ -2,7 +2,7 @@ import ProductPreview from "./ProductPreview";
 
 function ProductsList({ products, onRemove,onSelectProduct }) {
     return (
-        <div className="products-container">
+        <div className="card-grid">
             {products.map((product, index) => (
                 <ProductPreview
                     key={index}
@@ -12,6 +12,7 @@ function ProductsList({ products, onRemove,onSelectProduct }) {
                 />
 
             ))}
+            
         </div>
     );
 }

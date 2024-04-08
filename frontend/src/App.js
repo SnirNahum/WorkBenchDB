@@ -4,7 +4,8 @@ import AppHeader from './cmps/AppHeader';
 import Home from './pages/Home';
 import Integration from './pages/Integration';
 import Products from "./pages/Products";
-import AddEditProduct from "./pages/AddEditProduct";
+import Profile from "./pages/Profile";
+import ProductDetails from "./pages/ProductDetails";
 
 
 function App() {
@@ -15,10 +16,11 @@ function App() {
       </header>
       <main>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/products" element={<Products />} />
-          <Route path="/product/edit/:id?" element={<AddEditProduct />} />
+          <Route path="/product/:id" element={<ProductDetails />} />
           <Route path="/integration" element={<Integration />} />
+          <Route path="/profile" element={<Profile />} />
         </Routes>
       </main>
 
@@ -27,3 +29,5 @@ function App() {
 }
 
 export default App;
+
+// https://source.unsplash.com/random?wallpapers

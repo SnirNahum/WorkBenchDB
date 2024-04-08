@@ -49,7 +49,7 @@ const schema = {
 
 async function runOpenAI(prompt) {
     const chatCompletion = await openai.chat.completions.create({
-        model: "gpt-3.5-turbo-0613",
+        model: "gpt-4-0613",
         messages: [
             {
                 "role": "system", "content": "'You are a sell master and you need to write a Facebook post to sell a product'",
@@ -66,4 +66,7 @@ async function runOpenAI(prompt) {
 
 
 }
+
+
+
 export const workBenchService = { runOpenAI }

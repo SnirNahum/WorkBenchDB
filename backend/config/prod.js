@@ -1,4 +1,4 @@
 export default {
-  dbURL: 'mongodb+srv://theUser:thePass@cluster0-klgzh.mongodb.net/test?retryWrites=true&w=majority',
-  dbName : 'tester_db'
+  dbURL: 'mongodb+srv://snirious:siacSp01@fworld.2i8sx.mongodb.net/?retryWrites=true&w=majority&appName=FWorld',
+  dbName : 'fworld'
 }
