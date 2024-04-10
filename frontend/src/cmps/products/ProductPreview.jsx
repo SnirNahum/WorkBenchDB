@@ -4,25 +4,38 @@ import { useNavigate } from 'react-router-dom';
 function ProductPreview({ product, onRemove, onSelectProduct }) {
   const navigate = useNavigate();
 
-  
 
-  function onRemoveItem(e) {
-    e.stopPropagation();
-    onRemove(product._id);
-  }
+
+  // function onRemoveItem(e) {
+  //   e.stopPropagation();
+  //   onRemove(product._id);
+  // }
 
   function onSelectProdcut(e) {
     e.stopPropagation();
     onSelectProduct(product);
-    navigate(`/product/edit/${product._id}`);
+    navigate(`/product/${product._id}`);
   }
 
   return (
-    <div className='product-card' onClick={onSelectProdcut}>
-      <h1>{product.title}</h1>
-      <img src={product.img} alt='product' />
-      <p>{product.desc}</p>
-      <button onClick={onRemoveItem}>X</button>
+
+    <div class="card" onClick={onSelectProdcut}>
+
+      <div class="card-content">
+        <img src={product.img} alt="" />
+        <div className="card-details">
+          <h2>
+            {product.title}
+          </h2>
+          <p>
+            {product.desc}
+          </p>
+          <p>
+            {product.price}
+          </p>
+        </div>
+
+      </div>
     </div>
   );
 }
